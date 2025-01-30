@@ -13,6 +13,12 @@ class FakeApiService : ApiService {
         //TODO("Should return a list of fake user")
         return _users
     }
+    // Etape3
+    fun setUsers(newUsers: List<User>) {
+        _users.clear()
+        _users.addAll(newUsers)
+    }
+
 
     /**
      * Generate a random [User] and add it [FakeApiService.users] list.
