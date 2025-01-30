@@ -15,8 +15,8 @@ class UserRepository(
         apiService.addRandomUser()
     }
 
-    fun deleteUser(user: User) {
+    fun deleteUser(username: User) {
        // TODO("Should remove the user")
-        apiService.deleteUser(user)
+        apiService.deleteUser(username)
     }
 }
