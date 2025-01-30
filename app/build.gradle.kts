@@ -48,8 +48,9 @@ dependencies {
     implementation(libs.lottie)
     implementation (libs.material.v160)
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+
 
     // UNIT TEST
     testImplementation (libs.junit)
