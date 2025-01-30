@@ -3,4 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="user_active">#FFFFFF</color> <!-- Blanc pour actif -->
+    <color name="user_inactive">#E0182D</color>
+    <color name="default_background">#E22031</color> <!-- Rouge clair pour inactif -->
 </resources>
