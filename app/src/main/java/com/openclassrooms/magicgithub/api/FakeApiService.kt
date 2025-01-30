@@ -3,7 +3,7 @@ package com.openclassrooms.magicgithub.api
 import com.openclassrooms.magicgithub.model.User
 
 class FakeApiService : ApiService {
-    private val _users = FakeApiServiceGenerator.FAKE_USERS
+    private val _users = FakeApiServiceGenerator.FAKE_USERS.toMutableList()
 
     /**
      * Return a list of [User]
@@ -27,8 +27,8 @@ class FakeApiService : ApiService {
     /**
      * Delete a [User] from the [FakeApiService.users] list.
      */
-    override fun deleteUser(user: User) {
+    override fun deleteUser(username: User) {
         //TODO("Delete a user")
-        _users.remove(user)
+        _users.remove(username)
     }
 }
