@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/default_background">
+
 
 
     <ImageView
@@ -31,7 +33,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/item_list_user_avatar"
         app:layout_constraintStart_toEndOf="@+id/item_list_user_avatar"
-        app:layout_constraintTop_toTopOf="@+id/item_list_user_avatar" />
+        app:layout_constraintTop_toTopOf="@+id/item_list_user_avatar"
+        app:layout_constraintEnd_toStartOf="@id/item_list_user_delete_button" />
 
     <ImageButton
         android:id="@+id/item_list_user_delete_button"
@@ -44,6 +47,7 @@
         app:layout_constraintTop_toTopOf="@+id/item_list_user_username"
         app:srcCompat="@drawable/ic_delete_black_24dp"
         android:contentDescription="@string/delete" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
